@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rajat Sharma | CV / Resume</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+rel="stylesheet"
+/>
+
+<style>
+.cv-container {
+display: flex;
+gap: 20px;
+align-items: flex-start;
+padding: 40px 20px;
+}
+
+.cv-viewer {
+flex: 1;
+}
+
+.cv-viewer iframe {
+width: 100%;
+height: 800px;
+border: 2px solid #38bdf8;
+border-radius: 12px;
+}
+
+.cv-sidebar {
+flex: 0 0 300px;
+background: #1e293b;
+padding: 30px;
+border-radius: 12px;
+height: fit-content;
+position: sticky;
+top: 100px;
+}
+
+.cv-sidebar h3 {
+color: #38bdf8;
+margin-bottom: 20px;
+font-size: 1.3rem;
+}
+
+.cv-sidebar p {
+margin-bottom: 15px;
+font-size: 0.95rem;
+line-height: 1.6;
+}
+
+.cv-sidebar .buttons {
+display: flex;
+flex-direction: column;
+gap: 10px;
+margin-top: 20px;
+}
+
+.cv-sidebar a {
+background: #38bdf8;
+color: black;
+padding: 12px 20px;
+text-decoration: none;
+border-radius: 8px;
+font-weight: bold;
+text-align: center;
+transition: all 0.3s ease;
+}
+
+.cv-sidebar a:hover {
+background: #0ea5e9;
+transform: translateY(-2px);
+}
+
+.cv-sidebar .back-btn {
+background: #475569;
+color: white;
+}
+
+.cv-sidebar .back-btn:hover {
+background: #64748b;
+}
+
+@media(max-width: 768px) {
+.cv-container {
+flex-direction: column;
+}
+
+.cv-sidebar {
+position: static;
+flex: 1;
+width: 100%;
+}
+
+.cv-viewer iframe {
+height: 600px;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<div class="logo">Rajat Sharma</div>
+
+<ul>
+<li><a href="index.html#home">Home</a></li>
+<li><a href="index.html#about">About</a></li>
+<li><a href="index.html#skills">Skills</a></li>
+<li><a href="index.html#experience">Experience</a></li>
+<li><a href="index.html#projects">Projects</a></li>
+<li><a href="index.html#certificates">Certificates</a></li>
+<li><a href="cv.html">CV</a></li>
+<li><a href="index.html#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section>
+<h2>My Resume / CV</h2>
+
+<div class="cv-container">
+
+<div class="cv-viewer">
+<iframe src="assets/Rajat_Sharma_Resume.pdf" type="application/pdf"></iframe>
+</div>
+
+<div class="cv-sidebar">
+
+<h3>About This CV</h3>
+
+<p>
+This is my professional resume showcasing my DevOps expertise, experience, and skills in cloud infrastructure, automation, and Linux systems.
+</p>
+
+<p>
+I am a DevOps Engineer with hands-on experience in Docker, Kubernetes, AWS, Python, and infrastructure automation.
+</p>
+
+<div class="buttons">
+
+<a href="assets/Rajat_Sharma_Resume.pdf" download="Rajat_Sharma_Resume.pdf">
+<i class="fas fa-download"></i> Download CV
+</a>
+
+<a href="index.html#projects">
+<i class="fas fa-briefcase"></i> View Projects
+</a>
+
+<a href="index.html#experience">
+<i class="fas fa-suitcase"></i> Experience
+</a>
+
+<a href="index.html#about">
+<i class="fas fa-user"></i> About Me
+</a>
+
+<a href="index.html" class="back-btn">
+<i class="fas fa-arrow-left"></i> Back to Portfolio
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Rajat Sharma | DevOps Portfolio
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
